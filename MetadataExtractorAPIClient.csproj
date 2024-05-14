@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.MetadataExtractor</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/metadataextractor</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Metadata Extractor is a simple tool for extracting metadata from web pages. It returns the meta title, meta description, and more.</Description>
+    <RepositoryUrl>https://github.com/apiverve/metadataextractor-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>metadata extractor; metadata extraction; metadata extractor api; metadata extraction api; metadata extractor tool; metadata extraction tool; metadata extractor software; metadata extraction software; metadata extractor service; metadata extraction service; metadata extractor library; metadata extraction library; metadata extractor sdk; metadata extraction sdk; metadata extractor code; metadata extraction code; metadata extractor script; metadata extraction script; metadata extractor program; metadata extraction program; metadata extractor application; metadata extraction application; metadata extractor app; metadata extraction app; metadata extractor utility; metadata extraction utility; metadata extractor helper; metadata extraction helper; metadata extractor helper tool; metadata extraction helper tool; metadata extractor helper software; metadata extraction helper software; metadata extractor helper service; metadata extraction helper service; metadata extractor helper library; metadata extraction helper library; metadata extractor helper sdk; metadata extraction helper sdk; metadata extractor helper code; metadata extraction helper code; metadata extractor helper script; metadata extraction helper script; metadata extractor helper program; metadata extraction helper program; metadata extractor helper application; metadata extraction helper application; metadata extractor helper app; metadata extraction helper app; metadata extractor helper tool; metadata extraction helper tool; metadata extractor helper utility; metadata extraction helper utility; metadata extractor helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
