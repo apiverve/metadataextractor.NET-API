@@ -70,8 +70,8 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new metadataextractorQueryOptions{
-  url: "https://myspace.com"
+var queryOptions = new metadataextractorQueryOptions {
+  url = "https://myspace.com"
 };
 ```
 
