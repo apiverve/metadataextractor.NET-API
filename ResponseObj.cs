@@ -4,23 +4,55 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class jsonld
+public class favicons
 {
+    [JsonProperty("rel")]
+    public string rel { get; set; }
+
+    [JsonProperty("href")]
+    public string href { get; set; }
+
+}
+
+public class headings
+{
+    [JsonProperty("level")]
+    public string level { get; set; }
+
+    [JsonProperty("text")]
+    public string text { get; set; }
+
+}
+
+public class imgTags
+{
+    [JsonProperty("src")]
+    public string src { get; set; }
+
 }
 
 public class data
 {
+    [JsonProperty("requestUrl")]
+    public string requestUrl { get; set; }
+
     [JsonProperty("url")]
     public string url { get; set; }
 
     [JsonProperty("canonical")]
     public string canonical { get; set; }
 
+    [JsonProperty("charset")]
+    public string charset { get; set; }
+
     [JsonProperty("title")]
     public string title { get; set; }
 
     [JsonProperty("image")]
     public string image { get; set; }
+
+    [JsonProperty("favicons")]
+    public favicons[] favicons { get; set; }
 
     [JsonProperty("author")]
     public string author { get; set; }
@@ -47,7 +79,7 @@ public class data
     public string robots { get; set; }
 
     [JsonProperty("jsonld")]
-    public jsonld jsonld { get; set; }
+    public object[] jsonld { get; set; }
 
     [JsonProperty("og:url")]
     public string ogurl { get; set; }
@@ -160,44 +192,14 @@ public class data
     [JsonProperty("twitter:app:url:googleplay")]
     public string twitterappurlgoogleplay { get; set; }
 
+    [JsonProperty("headings")]
+    public headings[] headings { get; set; }
+
+    [JsonProperty("imgTags")]
+    public imgTags[] imgTags { get; set; }
+
     [JsonProperty("responseBody")]
     public string responseBody { get; set; }
-
-    [JsonProperty("article:published_time")]
-    public string articlepublishedtime { get; set; }
-
-    [JsonProperty("article:modified_time")]
-    public string articlemodifiedtime { get; set; }
-
-    [JsonProperty("article:expiration_time")]
-    public string articleexpirationtime { get; set; }
-
-    [JsonProperty("article:author")]
-    public string articleauthor { get; set; }
-
-    [JsonProperty("article:section")]
-    public string articlesection { get; set; }
-
-    [JsonProperty("article:tag")]
-    public string articletag { get; set; }
-
-    [JsonProperty("og:article:published_time")]
-    public string ogarticlepublishedtime { get; set; }
-
-    [JsonProperty("og:article:modified_time")]
-    public string ogarticlemodifiedtime { get; set; }
-
-    [JsonProperty("og:article:expiration_time")]
-    public string ogarticleexpirationtime { get; set; }
-
-    [JsonProperty("og:article:author")]
-    public string ogarticleauthor { get; set; }
-
-    [JsonProperty("og:article:section")]
-    public string ogarticlesection { get; set; }
-
-    [JsonProperty("og:article:tag")]
-    public string ogarticletag { get; set; }
 
     [JsonProperty("fb:app_id")]
     public string fbappid { get; set; }
