@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new metadataextractorQueryOptions {
+var queryOptions = new MetadataExtractorQueryOptions {
   url = "https://myspace.com"
 };
 ```
@@ -1007,7 +1007,8 @@ if(response.error != null) {
     "msapplication-TileColor": "#313131",
     "msapplication-TileImage": "https://x.myspacecdn.com/new/common/images/favicons/tile.png",
     "p:domain_verify": "9069a95798cb530a18cfa50cec2757d1"
-  }
+  },
+  "code": 200
 }
 ```
 
