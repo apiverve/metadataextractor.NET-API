@@ -206,7 +206,7 @@ if(response.error != null) {
       },
       {
         "level": "h3",
-        "text": "Connect with People"
+        "text": "Date, Network, and Connect with People"
       },
       {
         "level": "h2",
