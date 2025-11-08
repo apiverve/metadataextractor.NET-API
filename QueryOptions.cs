@@ -5,6 +5,6 @@ using System.Text;
 namespace APIVerve
 {
     public class MetadataExtractorQueryOptions {
-public string url { get; set; }
+public string Url { get; set; }
 }
 }
